@@ -1,7 +1,9 @@
-import Image from "next/image";
+import {DemoHeroGeometric} from "@/components/hero";
 
 export default function Home() {
   return (
-    <div>sell social</div>
+    <main className="">
+      <DemoHeroGeometric />
+    </main>
   );
 }
