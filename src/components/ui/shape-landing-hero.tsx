@@ -4,6 +4,7 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { Circle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import Btn15 from "./btn-15";
 
 
 function ElegantShape({
@@ -145,7 +146,7 @@ function HeroGeometric({
                 />
             </div>
 
-            <div className="relative z-10 container mx-auto px-4 md:px-6">
+            <div className="relative z-10 container flex flex-col items-center mx-auto px-4 md:px-6">
                 <div className=" mx-auto text-center">
                     <motion.div
                         custom={0}
@@ -192,7 +193,9 @@ function HeroGeometric({
                         </p>
                     </motion.div>
                 </div>
+                <Btn15/>
             </div>
+
 
             <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
         </div>
