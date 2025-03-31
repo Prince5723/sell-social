@@ -1,3 +1,4 @@
+import { Clients } from "@/components/clients";
 import {DemoHeroGeometric} from "@/components/hero";
 import {SaveBrands} from "@/components/saving-brands";
 import {Services} from "@/components/services";
@@ -8,6 +9,7 @@ export default function Home() {
       <DemoHeroGeometric />
       <SaveBrands/>
       <Services/> 
+      <Clients/>
     </main>
   );
 }
