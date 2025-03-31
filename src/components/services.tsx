@@ -1,12 +1,11 @@
 import { HoverEffect } from "@/components/ui/hover-effect"
+import { ServiceHeader } from "./service-header"
 
 export function Services() {
   return (
-    <div className="w-full bg-black pt-8">
-        <p className="text-lg md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
-        Services
-      </p>
-    <div className="max-w-5xl mx-auto px-8 ">
+    <div className="w-full bg-black">
+      <ServiceHeader/>
+    <div className="max-w-5xl mx-auto px-8 -mt-60">
       <HoverEffect items={projects} />
     </div>
     </div>
