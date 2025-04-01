@@ -6,7 +6,7 @@ import Image from "next/image"
 export function Clients() {
   const { theme } = useTheme()
   return (
-    <div className="h-screen w-full overflow-hidden bg-black">
+    <div className=" w-full overflow-hidden bg-black">
       <div className="mx-auto mt-32 w-full max-w-2xl">
         <div className="text-center text-3xl text-foreground">
           <span className="text-indigo-200">
