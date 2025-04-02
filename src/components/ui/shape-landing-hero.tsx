@@ -193,7 +193,7 @@ function HeroGeometric({
                         </p>
                     </motion.div>
                 </div>
-                <Btn15/>
+                <Btn15 className="cursor-pointer"/>
             </div>
 
 

@@ -96,7 +96,7 @@ export const FloatingNav = ({
         <div className="hidden md:flex items-center justify-center space-x-6">
           {navItems.map((navItem: any, idx: number) => (
             <Link
-              key={`link=${idx}`}
+              key={navItem.name}
               href={navItem.link}
               className={cn("relative text-white items-center flex space-x-1 hover:text-neutral-300")}
             >
@@ -137,8 +137,8 @@ export const FloatingNav = ({
             <div className="flex flex-col space-y-4">
               {navItems.map((navItem: any, idx: number) => (
                 <Link
-                  key={`mobile-link=${idx}`}
-                  href={navItem.link}
+                key={`mobile-${navItem.name}`}
+                href={navItem.link}
                   className="text-white py-2 px-4 hover:bg-white/10 rounded-lg flex items-center"
                   onClick={() => setMobileMenuOpen(false)}
                 >

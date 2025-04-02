@@ -4,13 +4,27 @@ import { ArrowUpRight } from "lucide-react";
 
 interface Btn15Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     label?: string;
+    scrollToId?: string;
 }
 
 export default function Btn15({
     className,
     label = "Let's Connect",
+    scrollToId = "contact",
     ...props
 }: Btn15Props) {
+    // Function to scroll to the specified section
+    const handleScroll = (e: React.MouseEvent) => {
+        e.preventDefault();
+        const targetSection = document.getElementById(scrollToId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            // Fallback if id doesn't exist
+            window.location.href = `/#${scrollToId}`;
+        }
+    };
+
     return (
         <Button
             className={cn(
@@ -20,6 +34,7 @@ export default function Btn15({
                 "group",
                 className
             )}
+            onClick={handleScroll}
             {...props}
         >
             {/* Gradient background effect */}
@@ -31,7 +46,7 @@ export default function Btn15({
                     "blur-[2.5px] transition-opacity duration-500"
                 )}
             />
-
+            
             {/* Content */}
             <div className="relative flex items-center justify-center gap-2">
                 <span className="text-white dark:text-zinc-900">{label}</span>
