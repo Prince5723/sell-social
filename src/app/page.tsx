@@ -5,10 +5,12 @@ import {Services} from "@/components/services";
 import {Projects} from "@/components/projects";
 import {ContactForm} from "@/components/form";
 import {FooterDemo} from "@/components/footer";
+import { Navbar } from "@/components/navbar";
 
 export default function Home() {
   return (
     <main className="bg-black">
+      <Navbar/>
       <DemoHeroGeometric />
       <SaveBrands/>
       <Services/> 
