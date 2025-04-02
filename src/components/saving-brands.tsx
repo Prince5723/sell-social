@@ -19,6 +19,7 @@ export function SaveBrands() {
   return (
     <div
       className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] relative pt-40 overflow-clip"
+      id="about"
       ref={ref}
     >
       <GoogleGeminiEffect

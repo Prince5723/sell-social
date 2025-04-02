@@ -4,6 +4,7 @@ import {SaveBrands} from "@/components/saving-brands";
 import {Services} from "@/components/services";
 import {Projects} from "@/components/projects";
 import {ContactForm} from "@/components/form";
+import {FooterDemo} from "@/components/footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Clients/>
       <Projects/>
       <ContactForm/>
+      <FooterDemo/>
     </main>
   );
 }

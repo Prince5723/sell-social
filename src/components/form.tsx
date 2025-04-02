@@ -11,7 +11,7 @@ export  function ContactForm() {
     console.log("Form submitted")
   }
   return (
-    <div className="w-full bg-black border border-slate-700 rounded-2xl shadow-[0px_0px_1px_1px_#262626]">
+    <div className="w-full bg-black border border-slate-700 rounded-2xl shadow-[0px_0px_1px_1px_#262626]" id="contact">
         <GooeyTextDemo/>
     <div className="mx-auto w-full max-w-md rounded-2xl bg-black p-8 shadow-[0px_0px_1px_1px_#262626] mb-8">
       <h2 className="text-xl font-bold text-neutral-200">Turn your vision into relity</h2>
