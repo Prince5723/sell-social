@@ -19,10 +19,10 @@ function StackedCircularFooter() {
           </div>
           <nav className="mb-8 flex flex-wrap justify-center gap-6 text-white">
             <a href="#" className="hover:text-slate-400">Home</a>
-            <a href="#" className="hover:text-slate-400">About</a>
-            <a href="#" className="hover:text-slate-400">Services</a>
-            <a href="#" className="hover:text-slate-400">Projects</a>
-            <a href="#" className="hover:text-slate-400">Contact</a>
+            <a href="#about" className="hover:text-slate-400">About</a>
+            <a href="#services" className="hover:text-slate-400">Services</a>
+            <a href="#projects" className="hover:text-slate-400">Projects</a>
+            <a href="#contact" className="hover:text-slate-400">Contact</a>
           </nav>
           <div className="mb-8 flex space-x-4">
       <Link href="https://www.facebook.com/share/1BiRm5VDKC/" target="_blank" rel="noopener noreferrer">

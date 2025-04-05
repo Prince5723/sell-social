@@ -85,8 +85,8 @@ export const FloatingNav = ({
             <Image
               src="/sell-social-logo.png"
               alt="Logo"
-              width={150}
-              height={48}
+              width={200}
+              height={200}
               className="h-12 w-auto"
             />
           </Link>
@@ -109,7 +109,7 @@ export const FloatingNav = ({
         <div className="hidden md:block">
           <button 
             onClick={scrollToContact}
-            className="border text-sm font-medium relative border-white/[0.2] text-white px-6 py-2 rounded-full hover:bg-white/10"
+            className="border text-sm font-medium relative border-white/[0.2] text-white px-6 py-2 rounded-full hover:bg-white/10 cursor-pointer"
           >
             <span>Contact Now</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
@@ -148,7 +148,7 @@ export const FloatingNav = ({
               ))}
               <button 
                 onClick={scrollToContact}
-                className="border text-sm font-medium border-white/[0.2] text-white px-6 py-3 rounded-lg hover:bg-white/10 mt-2"
+                className="border text-sm font-medium border-white/[0.2] text-white px-6 py-3 rounded-lg hover:bg-white/10 mt-2 cursor-pointer"
               >
                 Contact Now
               </button>
